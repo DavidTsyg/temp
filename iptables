@@ -55,8 +55,8 @@
 
 
 # Open TCP ports for incoming traffic
--A INPUT -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
--A OUTPUT -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+-A INPUT -p tcp --dport 2133 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -p tcp --sport 2133 -m state --state ESTABLISHED -j ACCEPT
 -A INPUT -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
 -A OUTPUT -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
 -A INPUT -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
